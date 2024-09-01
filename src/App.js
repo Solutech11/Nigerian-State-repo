@@ -36,7 +36,7 @@ function App() {
             </div>
           ):(
             <div className="d-flex justify-content-center align-items-center h-100 w-100">
-              <h3>Not freaking found nigga</h3>
+              <h3>Not found</h3>
             </div>
           )}
         </div>
