@@ -1,16 +1,16 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { useState, useEffect } from "react";
-import { StatesAndCapitals } from './Data';
+import { states_Capital } from './Data';
 
 function App() {
 
   const [Search, setSearch] = useState('')
 
-  const [State, setState] = useState(StatesAndCapitals)
+  const [State, setState] = useState(states_Capital)
 
   useEffect(() => {
-    let filteredData = StatesAndCapitals.filter(i=>((i.state)?.toLowerCase())?.includes(Search?.toLowerCase()))
+    let filteredData = states_Capital.filter(i=>((i.state)?.toLowerCase())?.includes(Search?.toLowerCase()))
     setState(filteredData)
   }, [Search]);
 
